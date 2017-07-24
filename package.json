@@ -1,0 +1,22 @@
+{
+  "name": "eletproxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "electron-packager . --platform=win32 --overwrite --icon=./imgs/logo.png.hqx"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.6.11",
+    "electron-json-storage": "^3.0.6",
+    "get-package-info": "^1.0.0",
+    "http-proxy": "^1.16.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.7.2"
+  }
+}

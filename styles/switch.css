@@ -1,0 +1,58 @@
+.iSwitch{
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 18px;
+  border-radius: 15px;
+  background: #dcdcdc;
+  border:1px solid #dcdcdc;
+  box-shadow: 0 0 5px #dcdcdc;
+  /* overflow: hidden; */
+  vertical-align: middle;
+  cursor: pointer; 
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.08);
+}
+.iSwitch input{
+  visibility: hidden;
+}
+.iSwitch i{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  border-radius: 100%;
+  background: #fff;
+}
+.iSwitch i::before{
+  content: " ";
+  display: none;
+  width: 200%;
+  height: 100%;
+  border-radius: 50px;
+  background: #0bde12;
+}
+.iSwitch i::after{
+  content: " ";
+  position: absolute;
+  top: -5px;
+  z-index: 2;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.08);
+  
+}
+.iSwitch.open-true i{
+  transform:translateX(100%);
+  -webkit-transform:translateX(100%);
+}
+.iSwitch.open-true i:before{
+  display: inline-block;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+}
